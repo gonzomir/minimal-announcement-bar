@@ -1,0 +1,50 @@
+#announcements {
+	position: relative;
+	z-index: 1;
+	padding: .75em 1.5em;
+	margin: 0;
+	background-color: #333;
+	color: #fff;
+}
+
+#announcements .wrapper {
+	max-width: 65em;
+	margin: 0 auto;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: 400;
+	text-align: center;
+}
+
+#announcements a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+#announcements button {
+	width: auto;
+	min-width: 0;
+}
+
+.announcement-message p:first-child {
+	margin-top: 0;
+}
+
+@media all and ( min-width: 35em ) {
+
+	#announcements .wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+	}
+
+	#announcements button {
+		margin-left: 1.5em;
+	}
+
+	.announcement-message p:last-child {
+		margin-bottom: 0;
+	}
+
+}
